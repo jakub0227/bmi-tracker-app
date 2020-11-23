@@ -10,15 +10,16 @@ export const Footer: FC = () => {
     const theme = useTheme()
     const styles = {
         root: css`
-            width: 100%;
-            padding: ${theme.spacing(1.5)}px;
+    width: 100%;
+    padding: ${theme.spacing(1.5)}px;
+    opacity: 95%;            
         `,
     }
 
     return (
         <Paper square elevation={8} css={styles.root} component='footer'>
-            <Typography align='center' variant='subtitle1'>
-                (C) Copyright {new Date().getFullYear()}
+            <Typography align='center' variant='subtitle2'>
+                Created with React, Emotion.sh, Material-UI (C) Copyright {new Date().getFullYear()}
             </Typography>
         </Paper>
     );

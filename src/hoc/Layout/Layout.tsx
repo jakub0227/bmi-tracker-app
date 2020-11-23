@@ -16,11 +16,13 @@ export const Layout: FC<LayoutProps> = props => {
         root: css`
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
-            
+            flex-direction: column;            
         `,
         page: css`
-            flex: 1;                      
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            background: linear-gradient(135deg, #ffec61 15% , #f321d7);                      
         `,
     }
     return (

@@ -7,9 +7,14 @@ export const Theme: FC = (props) => {
         <ThemeProvider theme={createMuiTheme({
             palette: {
                 type: 'dark',
-                primary: colors.amber,
+                primary: colors.deepPurple,
+                secondary: colors.blueGrey
             },
             props: {
+                MuiAppBar: {
+                    variant: "elevation",
+                    elevation: 5
+                },
                 MuiTypography: {
                     gutterBottom: true
                 }

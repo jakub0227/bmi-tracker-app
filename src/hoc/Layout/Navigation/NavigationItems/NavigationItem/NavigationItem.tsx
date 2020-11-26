@@ -2,7 +2,7 @@ import React, {FC} from "react";
 import Button from "@material-ui/core/Button/Button";
 import {Link} from "react-router-dom";
 
-interface NavigationItemProps {
+export interface NavigationItemProps {
     link: string;
     name: string;
 }

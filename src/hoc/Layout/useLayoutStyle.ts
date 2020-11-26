@@ -20,8 +20,6 @@ export const useLayoutStyle: ComponentStyleHook = props => {
 		    ${theme.customMixins.flexCentered};
 		    margin-top: ${theme.spacing(10)}px;
     		margin-bottom: ${theme.spacing(10)}px;
-    		border-color: cornflowerblue;
-    		border-style: solid;
 `,
 		rootAllPages: css`
 			margin: 0 auto;

@@ -13,7 +13,7 @@ export const useLayoutStyle: ComponentStyleHook = props => {
 		page: css`
 			${theme.customMixins.flexCentered};
             flex: 1;
-            background: linear-gradient(135deg, #ffec61 15% , #f321d7);
+            background: linear-gradient(135deg, #ffec61 15%, #f321d7);
         `,
 		wrapper: css`
 		    flex: 2;
@@ -22,14 +22,17 @@ export const useLayoutStyle: ComponentStyleHook = props => {
     		margin-bottom: ${theme.spacing(10)}px;
 `,
 		rootAllPages: css`
-			margin: 0 auto;
+			margin-left: ${theme.spacing(15)}px auto;
 `,
 		paperPage: css`
 	    	text-align: center;
 			height: 100vh;
+			background-color: rgba(66, 66, 66, 0.95);
+			border-radius: 20px;
 `,
 		pageTitleText: css`
 			padding-top: ${theme.spacing(10)}px;
+			font-weight: bolder;
 `,
 	}
 }

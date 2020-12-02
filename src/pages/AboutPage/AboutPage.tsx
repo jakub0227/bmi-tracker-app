@@ -1,22 +1,34 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import {jsx} from '@emotion/react'
-import React from 'react'
+import React, {Fragment} from 'react'
 import {Route} from '../../types/Route'
-import {Container, Paper, Typography} from '@material-ui/core'
-import {useLayoutStyle} from '../../hoc/Layout/useLayoutStyle'
+import {PageTitle} from '../shared/PageTitle/PageTitle'
+import {Box, Card, Typography} from '@material-ui/core'
+import {useAboutPageStyle} from './useAboutPageStyle'
+import {AboutPageCarousel} from './AboutPageCarousel/AboutPageCarousel'
 
-export const AboutPage: Route = (props) => {
-	
-	const styles = useLayoutStyle()
+export const AboutPage: Route = () => {
+	const styles = useAboutPageStyle()
 	return (
-		<Container>
-			<Paper css={styles.paperPage} elevation={5}>
-				<Typography css={styles.pageTitleText} variant='h4'>Hello from About section !</Typography>
-			</Paper>
-		</Container>
+		<Fragment>
+			<PageTitle>Hello from About section!</PageTitle>
+			<Box css={styles.root}>
+				<Card css={styles.cardRoot}>
+					<Typography variant='caption'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+						consequuntur cum dicta dignissimos dolor doloremque eligendi esse id labore laboriosam, modi,
+						mollitia, natus
+						nemo nisi nostrum odio pariatur perferendis possimus praesentium quae quod quos repellendus
+						saepe sapiente tenetur vel velit
+						veniam vitae voluptates voluptatum? Adipisci atque fugit illum necessitatibus
+						reiciendis.
+					</Typography>
+					<AboutPageCarousel/>
+				</Card>
+			</Box>
+		</Fragment>
 	)
 }
-
 AboutPage.routeName = '/about'
 AboutPage.displayName = 'About'
+AboutPage.icon = 'info'

@@ -13,6 +13,14 @@ export const useAboutPageCarouselStyle: ComponentStyleHook = props => {
           text-align: center;
           margin: ${theme.spacing(3)}px auto;
           padding: ${theme.spacing(2)}px;
+          transition: 0.3s cubic-bezier(.47, 1.64, .41, .8);
+          border-radius: 20px;
+
+          :hover {
+            cursor: pointer;
+            transform: scale(1.04);
+            box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.12);
+          }
 		`,
 		carousel: css`
           text-align: center;

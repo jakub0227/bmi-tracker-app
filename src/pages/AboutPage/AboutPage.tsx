@@ -15,7 +15,9 @@ export const AboutPage: Route = () => {
 			<PageTitle>Hello from About section!</PageTitle>
 			<Box css={styles.root}>
 				<Card css={styles.cardRoot}>
-					<Typography variant='caption'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+					<AboutPageCarousel/>
+					<Typography variant='subtitle2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Animi
 						consequuntur cum dicta dignissimos dolor doloremque eligendi esse id labore laboriosam, modi,
 						mollitia, natus
 						nemo nisi nostrum odio pariatur perferendis possimus praesentium quae quod quos repellendus
@@ -23,7 +25,6 @@ export const AboutPage: Route = () => {
 						veniam vitae voluptates voluptatum? Adipisci atque fugit illum necessitatibus
 						reiciendis.
 					</Typography>
-					<AboutPageCarousel/>
 				</Card>
 			</Box>
 		</Fragment>

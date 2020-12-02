@@ -17,7 +17,6 @@ export const useAboutPageStyle: ComponentStyleHook = props => {
           margin: auto;
           padding: ${theme.spacing(3)}px;
           max-width: 720px;
-          transition: 0.3s cubic-bezier(.47, 1.64, .41, .8);
           box-shadow: none;
           border-radius: 20px;
 		`,
